@@ -1,0 +1,12 @@
+[Unit]
+Description=Launches Kapow Robots
+After=kapowmc.target
+
+[Service]
+Type=fork
+User=kapowadmin
+ExecStart=/bin/python2.7 /opt/KapowKatalyst_9.4.6_x64/config/kapow_robots.py
+
+[Install]
+WantedBy=multi-user.target
+
