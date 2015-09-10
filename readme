@@ -1,0 +1,12 @@
+The set of files are used to start and stop Kapow MC and Robots.
+
+kapow_robots.py - This file looks at /opt/<KapowDirectory>/config/robots.conf. Inside robots.conf you should have the port number of each robot you want to run seperated  by a carriage return. For example:
+
+50002
+50003
+
+Nothing else should be in the file. Make sure not to leave white space. 
+
+kapowmc.service - systemd script whic should be placed in /etc/systemd/system/ directory. Used to enable and disable the management console
+
+kapowrobots.service - used to run "kapow_robots.py" as a service, and enables and disables the robots. 
