@@ -1,0 +1,11 @@
+[Unit]
+Description=Continual Ping to keep AWS vpn alive
+
+[Service]
+Type=simple
+ExecStart=/opt/pinger/pinger.sh
+
+
+[Install]
+WantedBy=multi-user.target
+
