@@ -1,0 +1,3 @@
+A script and servie which will ping our side of the VPN tunnel endpoint.
+
+This is to avoid VPN timeout which is implemented by design on AWS's side.
