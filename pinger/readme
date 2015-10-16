@@ -1,3 +1,11 @@
 A script and servie which will ping our side of the VPN tunnel endpoint.
 
 This is to avoid VPN timeout which is implemented by design on AWS's side.
+
+Installation:
+
+mv ./pinger/pinger.sh /opt/pinger/pinger.sh
+mv ./pinger/pinger.service /etc/systemd/system/pinger.service
+
+systemctl daemon-reload
+systemctl enable pinger
