@@ -1,0 +1,3 @@
+Scripts and utilities deployed within the Kapow Instances in public cloud.
+
+Most of these items are baked into the deployable image already. If the need to build from scratch arises we can clone these repos. 
